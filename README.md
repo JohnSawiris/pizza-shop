@@ -45,5 +45,5 @@ _This website is not responsive, other wise there's no known bugs_
 * _jQuery_
 
 ##
-Copyright (c) 2017 _**John Sawiris**_ Copyright Holder All Rights Reserved.
+Copyright (c) 2017 _**John Sawiris**_  All Rights Reserved.
 _This software is licensed under the MIT license_
