@@ -55,18 +55,18 @@ $(document).ready(function() {
       size = parseInt($("input[type=radio]:checked").val());
       $("input[type=checkbox]:checked").each(function() {
         toppings.push($(this).attr("value"));
-        console.log(toppings)
+        $("#order").fadeOut(800, function() {
+          $("#price").fadeIn(1000);
+        });
       });
     } else if (!$("input[type=checkbox]").is(":checked") || !$("input[type=radio]").is(":checked")) {
         alert("Pick size and topping");
       }
-    // $(this).fadeOut(800);
     var newOrder = new Pizza(toppings, size);
-    $("#price").text(newOrder.calculatePrice());
+    $("#price").append(newOrder.calculatePrice() + "</br>" + "Enjoy Your Meal!");
   });//Submit ends
   $("#reset").click(function() {
     toppings = [];
     $("#price").empty();
   });//reset click ends
-
 });//Ready ends

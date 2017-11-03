@@ -1,12 +1,23 @@
 body {
   background-color: #556270;
   min-height: 100vh;
-  color: #4ecdc4;
+  color: #c7f464;
   font-family: 'Caveat Brush', cursive;
 }
 .center {
   width: 50%;
   margin: 20px auto;
+}
+form.center {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 2rem 4rem;
+  margin-top: 4rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all .8s ease-in-out;
+}
+form.center:hover {
+  background-color: rgba(255, 255, 255, 0);
 }
 .form-group {
   margin-bottom: 0.5rem;
@@ -14,20 +25,39 @@ body {
 h1.font-style {
   color: #ff6b6b;
   font-size: 6em;
+  width: 100%;
+  background-color: #4ecdc4;
 }
 span.font-style {
-  font-size: 1.65rem;
+  font-size: 1.7rem;
+  transition: all .4s ease;
+}
+span.font-style:hover, .input-boxes:hover {
+  font-size: 1.9rem;
 }
 .input-boxes {
   width: 20px;
   height: 20px;
   margin-right: 0.25rem;
   margin-top: 0.1rem;
+  cursor: pointer;
 }
 .btn {
   margin-top: 1em;
   font-size: 1.3em;
+  cursor: pointer;
 }
 .btn:not([type="submit"]) {
     margin-left: 1em;
+}
+.price {
+  margin: 3rem auto;
+  padding-top: 5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 300px;
+  font-size: 3rem;
+  border-radius: 5px;
+  text-align: center;
+  letter-spacing: 3px;
+  display: none;
 }

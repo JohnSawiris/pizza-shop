@@ -13,38 +13,49 @@
   <script src="js/scripts.js" charset="utf-8"></script>
   </head>
   <body>
+    <div class="overlay">
+      <div class="">
+        <p>Pick size and topping</p>
+        <button type="button" name="button">Ok</button>
+      </div>
+    </div>
+    <h1 class="font-style text-center">Pizza Shop</h1>
     <div class="container">
-      <h1 class="font-style text-center">Pizza Shop</h1>
-      <form class="center" id="order">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="form-group">
-              <input type="checkbox" class="input-boxes" name="toppings" value="pepperoni"><span class="font-style">Pepperoni</span></br>
+      <div  id="order">
+        <form class="center">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <input type="checkbox" class="input-boxes" name="toppings" value="pepperoni"><span class="font-style">Pepperoni</span></br>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" class="input-boxes" name="toppings" value="chesse"><span class="font-style">Chesse</span></br>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" class="input-boxes" name="toppings" value="sausage"><span class="font-style">Sausage</span></br>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" class="input-boxes" name="toppings" value="bacon"><span class="font-style">Bacon</span></br>
+              </div>
+              <div class="form-group">
+                <input type="checkbox" class="input-boxes" name="toppings" value="black-olives"><span class="font-style">Black Olives</span></br>
+              </div>
             </div>
-            <div class="form-group">
-              <input type="checkbox" class="input-boxes" name="toppings" value="chesse"><span class="font-style">Chesse</span></br>
-            </div>
-            <div class="form-group">
-              <input type="checkbox" class="input-boxes" name="toppings" value="sausage"><span class="font-style">Sausage</span></br>
-            </div>
-            <div class="form-group">
-              <input type="checkbox" class="input-boxes" name="toppings" value="bacon"><span class="font-style">Bacon</span></br>
-            </div>
-            <div class="form-group">
-              <input type="checkbox" class="input-boxes" name="toppings" value="black-olives"><span class="font-style">Black Olives</span></br>
+            <div class="col-md-6">
+              <input type="radio" name="size" value="0" class="input-boxes"><span class="font-style">Small</span></br>
+              <input type="radio" name="size" value="1" class="input-boxes"><span class="font-style">Medium</span></br>
+              <input type="radio" name="size" value="2" class="input-boxes"><span class="font-style">Large</span></br>
             </div>
           </div>
-          <div class="col-md-6">
-            <input type="radio" name="size" value="0" class="input-boxes"><span class="font-style">Small</span></br>
-            <input type="radio" name="size" value="1" class="input-boxes"><span class="font-style">Medium</span></br>
-            <input type="radio" name="size" value="2" class="input-boxes"><span class="font-style">Large</span></br>
-          </div>
-        </div>
-        <button type="submit" name="button" class="btn btn-success">Place The Order</button>
-        <button type="reset" name="button" class="btn btn-danger" id="reset">Reset The Order</button>
-      </form>
-      <div  id="price">
+          <button type="submit" name="button" class="btn btn-success">Place The Order</button>
+          <button type="reset" name="button" class="btn btn-danger" id="reset">Reset The Order</button>
+        </form>
+      </div>
 
+      <div class="row">
+        <div class="col-md-9 price" id="price">
+
+        </div>
       </div>
     </div>
   </body>
