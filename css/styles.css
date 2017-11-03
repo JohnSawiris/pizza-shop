@@ -2,6 +2,7 @@ body {
   background-color: #556270;
   min-height: 100vh;
   color: #4ecdc4;
+  font-family: 'Caveat Brush', cursive;
 }
 .center {
   width: 50%;
@@ -10,19 +11,23 @@ body {
 .form-group {
   margin-bottom: 0.5rem;
 }
-.font-style {
-  font-family: 'Caveat Brush', cursive;
-}
 h1.font-style {
   color: #ff6b6b;
   font-size: 6em;
 }
 span.font-style {
-  font-size: 1.7rem;
+  font-size: 1.65rem;
 }
 .input-boxes {
   width: 20px;
   height: 20px;
-  margin-right: 0.5rem;
-  margin-top: 0.5rem;
+  margin-right: 0.25rem;
+  margin-top: 0.1rem;
+}
+.btn {
+  margin-top: 1em;
+  font-size: 1.3em;
+}
+.btn:not([type="submit"]) {
+    margin-left: 1em;
 }
