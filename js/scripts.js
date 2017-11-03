@@ -60,7 +60,10 @@ $(document).ready(function() {
         });
       });
     } else if (!$("input[type=checkbox]").is(":checked") || !$("input[type=radio]").is(":checked")) {
-        alert("Pick size and topping");
+        $(".overlay").fadeIn(700);
+        $("#overlay-btn").click(function() {
+          $(".overlay").fadeOut(700);
+        });
       }
     var newOrder = new Pizza(toppings, size);
     $("#price").append(newOrder.calculatePrice() + "</br>" + "Enjoy Your Meal!");
